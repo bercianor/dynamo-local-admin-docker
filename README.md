@@ -9,7 +9,7 @@ docker pull instructure/dynamo-local-admin
 docker run -p 8000:8000 -it --rm instructure/dynamo-local-admin
 ```
 
-Now open http://localhost:8000/ in your browser, and you'll see the admin UI. You can also hit port 8000 with Dynamo API requests
+Now open <http://localhost:8000/> in your browser, and you'll see the admin UI. You can also hit port 8000 with Dynamo API requests
 
 A proxy is included which differentiates between Dynamo requests and web requests, and proxies to the appropriate server.
 
@@ -19,4 +19,4 @@ It's just very convenient if you do a lot of Dynamo development.
 
 ## Dinghy Users
 
-If you're using Dinghy and its automatic proxy, `VIRTUAL_HOST` and `VIRTUAL_PORT` are already set, so you don't have to specify any ports in the `docker run` and can just open http://dynamo.docker/ in your browser.
+If you're using Dinghy and its automatic proxy, `VIRTUAL_HOST` and `VIRTUAL_PORT` are already set, so you don't have to specify any ports in the `docker run` and can just open <http://dynamo.docker/> in your browser.
