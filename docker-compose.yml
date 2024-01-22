@@ -1,0 +1,16 @@
+services:
+  db:
+    container_name: dynamodb_testdb
+    # image: instructure/dynamo-local-admin:latest
+    build: .
+    restart: unless-stopped
+
+    ports:
+      - target: 8000
+        published: 8000
+
+    volumes:
+      - db_data:/var/lib/dynamodb
+
+volumes:
+  db_data:
